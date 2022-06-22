@@ -1,0 +1,88 @@
+/*====LEFT NAV STYLES====*/
+#left-nav
+{
+    display: flex;
+    position: absolute;
+    width: 180px;
+    height: 1000px;
+    background: white;
+    left: 0;
+    transition: all .5s ease;
+    font-size: 21px;
+}
+.nav-wrapper
+{
+    width: 70%;
+    margin: 100px auto;
+}
+
+/*Links in left nav*/
+.sd-nav-item
+{
+    display: flex;
+    width: 100%;
+    margin: 12px auto;
+    text-decoration: none;
+    color: #404040;
+}
+a.sd-nav-item:hover
+{
+    text-decoration: underline;
+}
+
+/*Section with links*/
+.section
+{
+    border-bottom: dotted 2px #999999;
+    padding: 10px 0;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+/*Section with social medias icons*/
+.socialmedia
+{
+    width: 100%;
+}
+.social-icon
+{
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+/*===TOGGLE BUTTON AND ICONS AFTER BUTTON PRESS===*/
+/*Toggle btn after click only btn is visible*/
+.toggle-btn
+{
+    display: flex;
+    height: 1000px;
+    width: 40px;
+    content: "&#8249;";
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 100%;
+    background: white;
+    cursor: pointer;
+    font-size: 270%;
+}
+
+/*Class added by toggleMenu function. After Btn click hide left menu*/
+.active
+{
+    transform: translate(-180px);
+}
+
+/*Icon on toggle BTN*/
+#toggler-icon
+{
+    color: #909090;
+    transition: translate .5s ease, rotate .5s ease;
+}
+
+/*If menu is in hide mode, rotate and change color of toggle icon*/
+.active-icon
+{
+    transform: rotate(-180deg);
+    color: black !important;
+}

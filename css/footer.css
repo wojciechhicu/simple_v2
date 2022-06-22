@@ -1,0 +1,9 @@
+/*===FOOTER STYLES===*/
+.footer
+{
+    background: #023a5c;
+    display: flex;
+    height: 60px;
+    margin-top: 140px; /* for correct displaying added margin top from content */
+    width: 100%;
+}

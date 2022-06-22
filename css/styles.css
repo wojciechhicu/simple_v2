@@ -1,0 +1,31 @@
+/*====Importing components====*/
+@import "animations.css";
+@import "top-nav.css";
+@import "left-nav.css";
+@import "content.css";
+@import "footer.css";
+@import "media-queries.css";
+
+/*====OVERALL STYLES=====*/
+
+/*Reset paddings and margins, set primary font*/
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    list-style-type: none;
+}
+/* Set color for placeholders in input fields */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
